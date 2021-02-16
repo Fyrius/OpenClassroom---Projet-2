@@ -3,18 +3,27 @@ package com.hemebiotech.analytics;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.FileWriter;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class AnalyticsCounter {
 	private static int headacheCount = 0;	// initialize to 0
 	private static int rashCount = 0;		// initialize to 0
 	private static int pupilCount = 0;		// initialize to 0
 	
-	
+	private static Map<String, Integer> count = new HashMap<String, Integer>();
 	
 	public static void main(String args[]) throws Exception {
 		// first get input
-		BufferedReader reader = new BufferedReader (new FileReader("src/symptoms.txt"));
-		String line = reader.readLine();
+		List<String> list = new ReadSymptomDataFromFile().getSymptoms("src/symptoms.txt");
+		
+		/*
+		 * 1 - Faire une boucle qui navige dans la list des symptomes
+		 * 2 - Si symptoms pas dans la map alors ajout
+		 * 	   Sinon, get la valeur puis incrémenté de 1
+		 * 
+		*/
 		
 		int i = 0;	// set i to 0
 		while (line != null) {
@@ -33,6 +42,7 @@ public class AnalyticsCounter {
 
 			line = reader.readLine();	// get another symptom
 		}
+		
 		
 		// next generate output
 		FileWriter writer = new FileWriter ("src/result.txt");
