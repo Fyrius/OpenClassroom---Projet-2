@@ -1,3 +1,23 @@
-headache: 0
-rash: 0
-dialated pupils: 0
+tremor: 4
+dizziness: 5
+blindness: 1
+constricted pupils: 3
+fever: 7
+tremor: 4
+cough: 6
+tremor: 4
+dizziness: 5
+tremor: 4
+blindness: 1
+dry mouth: 8
+dizziness: 5
+tremor: 4
+constricted pupils: 3
+constricted pupils: 3
+fever: 7
+high blood pressure: 10
+blindness: 1
+tremor: 4
+constricted pupils: 3
+constricted pupils: 3
+dizziness: 5
