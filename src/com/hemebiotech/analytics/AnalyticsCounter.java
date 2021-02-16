@@ -11,7 +11,7 @@ public class AnalyticsCounter {
 	
 	public static void main(String args[]) throws Exception {
 		// first get input
-		BufferedReader reader = new BufferedReader (new FileReader("symptoms.txt"));
+		BufferedReader reader = new BufferedReader (new FileReader("src/symptoms.txt"));
 		String line = reader.readLine();
 
 		int i = 0;	// set i to 0
@@ -33,7 +33,7 @@ public class AnalyticsCounter {
 		}
 		
 		// next generate output
-		FileWriter writer = new FileWriter ("result.out");
+		FileWriter writer = new FileWriter ("src/result.out");
 		writer.write("headache: " + headacheCount + "\n");
 		writer.write("rash: " + rashCount + "\n");
 		writer.write("dialated pupils: " + pupilCount + "\n");
