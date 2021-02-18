@@ -12,10 +12,10 @@ public class AnalyticsCounter {
 	private static Map<String, Integer> count = new HashMap<String, Integer>();
 	
 	public static void main(String args[]) throws Exception {
-		// first get input
+		// Obtention des informations du ficher "symptoms.txt" et mise à place d'une liste
 		List<String> list = new ReadSymptomDataFromFile().getSymptoms("src/symptoms.txt");
 		
-		// comptage
+		// Comptage des maladies de la liste des symptomes
 		for(int i = 0; i < list.size(); i++) {
 			String key = list.get(i);
 					
@@ -26,20 +26,12 @@ public class AnalyticsCounter {
 			}
 		}
 		
-		// tri
+		// Tri de la map par ordre alphabetique
 		TreeMap<String, Integer> sorted = new TreeMap<>(count);
         Set<Entry<String, Integer>> mappings = sorted.entrySet();
-        
-        System.out.println("HashMap after sorting by keys in ascending order ");
-        for(Entry<String, Integer> mapping : mappings){
-            System.out.println(mapping.getKey() + " ==> " + mapping.getValue());
-        }
-		
-		// next generate output
-		FileWriter writer = new FileWriter ("src/result.txt");
-		/*for (String key: count.keySet()) {
-			writer.write(key + ": " + count.get(key) + "\n");
-	    }*/
+        		
+		// Creation et ecriture du fichier "result.out"
+		FileWriter writer = new FileWriter ("src/result.out");
 		for (Entry<String, Integer> entry: mappings) {
 			writer.write(entry.getKey() + ": " + entry.getValue() + "\n");
 	    }

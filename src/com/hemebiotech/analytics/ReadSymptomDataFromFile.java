@@ -11,11 +11,6 @@ import java.util.List;
  */
 public class ReadSymptomDataFromFile implements ISymptomReader {
 
-	
-	/**
-	 * @param filepath a full or partial path to file with symptom strings in it, one per line
-	 */
-	
 	@Override
 	public List<String> getSymptoms(String filepath) {
 		ArrayList<String> result = new ArrayList<String>();
