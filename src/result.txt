@@ -1,23 +1,23 @@
-java.util.stream.ReferencePipeline$3@65ab7765: 4
-java.util.stream.ReferencePipeline$3@1b28cdfa: 5
-java.util.stream.ReferencePipeline$3@eed1f14: 1
-java.util.stream.ReferencePipeline$3@7229724f: 3
-java.util.stream.ReferencePipeline$3@4c873330: 7
-java.util.stream.ReferencePipeline$3@119d7047: 4
-java.util.stream.ReferencePipeline$3@776ec8df: 6
-java.util.stream.ReferencePipeline$3@4eec7777: 4
-java.util.stream.ReferencePipeline$3@3b07d329: 5
-java.util.stream.ReferencePipeline$3@41629346: 4
-java.util.stream.ReferencePipeline$3@404b9385: 1
-java.util.stream.ReferencePipeline$3@6d311334: 8
-java.util.stream.ReferencePipeline$3@682a0b20: 5
-java.util.stream.ReferencePipeline$3@3d075dc0: 4
-java.util.stream.ReferencePipeline$3@214c265e: 3
-java.util.stream.ReferencePipeline$3@448139f0: 3
-java.util.stream.ReferencePipeline$3@7cca494b: 7
-java.util.stream.ReferencePipeline$3@7ba4f24f: 10
-java.util.stream.ReferencePipeline$3@3b9a45b3: 1
-java.util.stream.ReferencePipeline$3@7699a589: 4
-java.util.stream.ReferencePipeline$3@58372a00: 3
-java.util.stream.ReferencePipeline$3@4dd8dc3: 3
-java.util.stream.ReferencePipeline$3@6d03e736: 5
+anxiety: 5
+arrhythmias: 3
+blindness: 1
+blurred vision: 5
+constricted pupils: 3
+cough: 6
+dialated pupils: 4
+dizziness: 5
+dry mouth: 8
+fever: 7
+headache: 3
+high blood pressure: 10
+inflamation: 7
+insomnia: 4
+low blood pressure: 4
+nausea: 5
+rapid heart rate: 1
+rash: 4
+shortness of breath: 3
+stiff neck: 4
+stomach pain: 3
+tremor: 4
+water retention: 1
