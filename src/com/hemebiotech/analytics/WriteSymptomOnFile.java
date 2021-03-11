@@ -4,6 +4,11 @@ import java.io.FileWriter;
 import java.util.Map.Entry;
 import java.util.Set;
 
+/**
+ * Simple writing on a file
+ * Force the name if it is empty
+ */
+
 public class WriteSymptomOnFile implements ISymptomWriter {
 	
 	private String filename;

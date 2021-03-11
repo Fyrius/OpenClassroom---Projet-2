@@ -4,18 +4,12 @@ import java.util.Set;
 import java.util.Map.Entry;
 
 /**
- * Anything that will read symptom data from a source
- * The important part is, the return value from the operation, which is a list of strings,
- * that may contain many duplications
- * 
- * The implementation does not need to order the list
- * 
+ * Take a Set of Entry of String/Integer for write it into a file
  */
 public interface ISymptomWriter {
 	/**
-	 * If no data is available, return an empty List
-	 * 
-	 * @return a raw listing of all Symptoms obtained from a data source, duplicates are possible/probable
+	 * If no data is available into the Set, the file will be empty
+	 * If no name is gived, the file will be named "result.out" by default
 	 */
 	public void writeSymptoms(Set<Entry<String, Integer>> mapping) throws Exception;
 }

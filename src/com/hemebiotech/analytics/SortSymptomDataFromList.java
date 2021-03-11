@@ -5,8 +5,12 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
+/**
+ * Simple sorting of a Map
+ */
+
 public class SortSymptomDataFromList implements ISymptomSorter {
-	
+		
 	@Override
 	public Map<String, Integer> sortSymptoms(List<String> list) {
 		Map<String, Integer> count = new HashMap<String, Integer>();

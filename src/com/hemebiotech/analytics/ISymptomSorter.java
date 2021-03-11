@@ -4,18 +4,12 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Anything that will read symptom data from a source
- * The important part is, the return value from the operation, which is a list of strings,
- * that may contain many duplications
- * 
- * The implementation does not need to order the list
- * 
+ * The important part is, the return map from the sort, which is a Map of strings for int,
+ * sorted by alphabetical order
  */
 public interface ISymptomSorter {
 	/**
-	 * If no data is available, return an empty List
-	 * 
-	 * @return a raw listing of all Symptoms obtained from a data source, duplicates are possible/probable
+	 * If no data is available in the list, return an empty Map
 	 */
 	public Map<String, Integer> sortSymptoms(List<String> list);
 }
