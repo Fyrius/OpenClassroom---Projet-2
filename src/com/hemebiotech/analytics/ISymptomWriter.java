@@ -10,6 +10,10 @@ public interface ISymptomWriter {
 	/**
 	 * If no data is available into the Set, the file will be empty
 	 * If no name is gived, the file will be named "result.out" by default
+	 * 
+	 * @param a raw set of Entry<String, Integer>.
+	 * @throws all exception but only IOException can be occure
+	 * @return void
 	 */
 	public void writeSymptoms(Set<Entry<String, Integer>> mapping) throws Exception;
 }

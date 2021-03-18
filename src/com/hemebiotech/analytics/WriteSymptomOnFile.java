@@ -13,10 +13,18 @@ public class WriteSymptomOnFile implements ISymptomWriter {
 	
 	private String filename;
 
+	/**
+	 * @param filepath a full or partial path to save the file
+	 */
 	public WriteSymptomOnFile(String filename) {
 		this.filename = filename;
 	}
 	
+	/**
+	 * @param a raw set of Entry of String and Integer
+	 * @throws any exception but only IOException can be occure
+	 * @return void
+	 */
 	@Override
 	public void writeSymptoms(Set<Entry<String, Integer>> mapping) throws Exception{
 		

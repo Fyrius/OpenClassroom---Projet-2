@@ -10,6 +10,9 @@ import java.util.Map;
 public interface ISymptomSorter {
 	/**
 	 * If no data is available in the list, return an empty Map
+	 * 
+	 * @param a raw listing of String
+	 * @return a raw map of String and Integer
 	 */
 	public Map<String, Integer> sortSymptoms(List<String> list);
 }

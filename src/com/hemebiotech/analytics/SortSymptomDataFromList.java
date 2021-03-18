@@ -10,7 +10,11 @@ import java.util.TreeMap;
  */
 
 public class SortSymptomDataFromList implements ISymptomSorter {
-		
+	
+	/**
+	 * @param a raw List of string
+	 * @return a TreeMap who sort by alphabetical order
+	 */
 	@Override
 	public Map<String, Integer> sortSymptoms(List<String> list) {
 		Map<String, Integer> count = new HashMap<String, Integer>();
